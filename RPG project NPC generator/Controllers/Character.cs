@@ -17,24 +17,36 @@ public class CharacterController : Controller
         {
             Race = new Dictionary<int, string>(),
             Class = new Dictionary<int, string>(),
-            Gender = new Dictionary<int, string>()
+            Gender = new Dictionary<int, string>(),
+            Histories = new Dictionary<int, string>(),
+            Region = new Dictionary<int, string>()
         };
     }
 
     [HttpGet]
-    public IActionResult GetCharacter(int minAge, int maxAge, string region)
+    public IActionResult GetCharacter(int minAge, int maxAge, string? region)
     {
         Random rnd = new Random();
         var raceIndex = rnd.Next(_config.Race.Count);
         var classIndex = rnd.Next(_config.Class.Count);
         var genderIndex = rnd.Next(_config.Gender.Count);
+        var regionIndex = rnd.Next(_config.Region.Count);
+        var historyIndex = rnd.Next(_config.Histories.Count);
 
         var name = "test";
         var race = _config.Race.ElementAt(raceIndex).Value;
         var character_class = _config.Class.ElementAt(classIndex).Value;
         var gender = _config.Gender.ElementAt(genderIndex).Value;
         var age = rnd.Next(minAge, maxAge);
-        var history = "history placeholder";
+        var character_region = "";
+        if (region == null) {
+            character_region = _config.Region.ElementAt(regionIndex).Value;
+        }
+        else
+        {
+            character_region = region;
+        }
+        var history = _config.Histories.ElementAt(historyIndex).Value;
         var character = new
         {
             Name = @name,
@@ -42,7 +54,7 @@ public class CharacterController : Controller
             Class = @character_class,
             Gender = @gender,
             Age = @age,
-            Region = @region,
+            Region = @character_region,
             History = @history
         };
         return Ok(character);
