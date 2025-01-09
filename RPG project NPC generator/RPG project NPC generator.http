@@ -1,0 +1,6 @@
+@RPG_project_NPC_generator_HostAddress = http://localhost:5218
+
+GET {{RPG_project_NPC_generator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
