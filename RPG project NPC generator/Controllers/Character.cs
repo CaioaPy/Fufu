@@ -24,7 +24,7 @@ public class CharacterController : Controller
     }
 
     [HttpGet]
-    public IActionResult GetCharacter(int minAge, int maxAge, string? region)
+    public IActionResult GetCharacter(int minAge, int maxAge, string? region, string? gender)
     {
         Random rnd = new Random();
         var raceIndex = rnd.Next(_config.Race.Count);
@@ -36,7 +36,15 @@ public class CharacterController : Controller
         var name = "test";
         var race = _config.Race.ElementAt(raceIndex).Value;
         var character_class = _config.Class.ElementAt(classIndex).Value;
-        var gender = _config.Gender.ElementAt(genderIndex).Value;
+        var character_gender = "";
+        if (gender == null)
+        {
+            character_gender = _config.Gender.ElementAt(genderIndex).Value;
+        }
+        else
+        {
+            character_gender = gender;
+        }
         var age = rnd.Next(minAge, maxAge);
         var character_region = "";
         if (region == null) {
@@ -52,7 +60,7 @@ public class CharacterController : Controller
             Name = @name,
             Race = @race,
             Class = @character_class,
-            Gender = @gender,
+            Gender = @character_gender,
             Age = @age,
             Region = @character_region,
             History = @history
