@@ -1,0 +1,25 @@
+{
+    "Race": {
+        "0": "Human",
+        "1": "Elf",
+        "2": "Dwarf",
+        "3": "Orc",
+        "4": "Goblin",
+        "5": "Troll",
+        "6": "Half Dragon",
+        "7": "Dark Elf"
+    },
+    "Class": {
+        "0": "Warrior",
+        "1": "Mage",
+        "2": "Assassin",
+        "3": "Tank",
+        "4": "Healer",
+        "5":  "Alchemist"
+    },
+    "Gender": {
+        "0": "Male",
+        "1": "Female",
+        "2": "Non-Binary"
+    }
+}
