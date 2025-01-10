@@ -1,1 +1,1 @@
-# RPG project NPC generator
+# Fufu W.I.P.
