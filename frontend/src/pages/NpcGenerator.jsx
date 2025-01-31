@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import './NpcGenerator.css';
+import Navbar from '../assets/navbar';
 
 function NpcGenerator() {
   const [character, setCharacter] = useState(null);
@@ -26,11 +26,10 @@ function NpcGenerator() {
   }, []);
 
   return (
+    
     <div>
+      <Navbar/>
       <h1>NPC Generator</h1>
-      <nav>
-        <Link to="/">Home</Link> | <Link to="/dice">Dice</Link>
-      </nav>
       <div>
         <h2>Generate a Character</h2>
         <label>
