@@ -3,7 +3,8 @@ import './Home.css';
 
 function Home() {
     return (
-        <div>
+        <div className="toppage">
+            <h1>Fufu</h1>
          <div>
         <Navbar />
         </div>   

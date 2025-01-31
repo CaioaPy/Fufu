@@ -7,3 +7,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.toppage {
+    margin-top: 25ch;
+  }

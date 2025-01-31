@@ -27,7 +27,7 @@ function NpcGenerator() {
 
   return (
     
-    <div>
+    <div className="toppage">
       <Navbar/>
       <h1>NPC Generator</h1>
       <div>
