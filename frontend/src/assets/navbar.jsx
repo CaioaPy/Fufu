@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import logo from "../assets/imgs/buttonholder.png";
 
 function Navbar() {
     return (
@@ -9,7 +10,7 @@ function Navbar() {
             </div>
 
             <div className="buttonMeio">
-                <Link to="/">Home</Link>
+                <Link to="/"><img className="logo" src={logo} alt="Home"/></Link>
             </div>
 
             <div className="buttonDireita">
