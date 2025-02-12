@@ -15,6 +15,7 @@ public class CharacterController : Controller
         var json = System.IO.File.ReadAllText("CharacterConfig.json");
         _config = JsonSerializer.Deserialize<CharacterConfig>(json) ?? new CharacterConfig
         {
+            Name = new Dictionary<int, string>(),
             Race = new Dictionary<int, string>(),
             Class = new Dictionary<int, string>(),
             Gender = new Dictionary<int, string>(),

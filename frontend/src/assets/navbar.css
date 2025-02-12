@@ -6,7 +6,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 10ch;
+    height: 12ch;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
 }
 
 .buttonEsquerda {
-    padding-top: 5ch;
+    padding-top: 2ch;
     color:red;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .buttonDireita {
-    padding-top: 5ch;
+    padding-top: 2ch;
     color:green;
 }
 
@@ -33,7 +33,11 @@
     height: auto;
 }
 
-.npc, .dice {
+.npc {
+    width: 75ch; 
+    height: auto; 
+}
+.dice {
     width: 65ch; 
     height: auto; 
 }

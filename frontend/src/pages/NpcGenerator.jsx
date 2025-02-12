@@ -19,7 +19,7 @@ function NpcGenerator() {
     } catch (error) {
       console.error('Erro no GET:', error);
     }
-  };
+  }
 
   useEffect(() => {
     fetchCharacter();
