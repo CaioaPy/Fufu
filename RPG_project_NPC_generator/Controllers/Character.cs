@@ -27,13 +27,14 @@ public class CharacterController : Controller
     public IActionResult GetCharacter(int minAge, int maxAge, string? region, string? gender)
     {
         Random rnd = new Random();
+        var nameIndex = rnd.Next(_config.Name.Count);
         var raceIndex = rnd.Next(_config.Race.Count);
         var classIndex = rnd.Next(_config.Class.Count);
         var genderIndex = rnd.Next(_config.Gender.Count);
         var regionIndex = rnd.Next(_config.Region.Count);
         var historyIndex = rnd.Next(_config.Histories.Count);
 
-        var name = "test";
+        var name = _config.Name.ElementAt(nameIndex).Value;
         var race = _config.Race.ElementAt(raceIndex).Value;
         var character_class = _config.Class.ElementAt(classIndex).Value;
         var character_gender = "";
