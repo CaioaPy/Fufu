@@ -8,7 +8,7 @@ function Dice(){
   
     const fetchResult = async () => {
       try {
-        const response = await axios.get('https://localhost:7017/api/Dice', {
+        const response = await axios.get('https://fufu-lj60.onrender.com/api/Dice', {
           params: {sides},
         });
         setResult(response.data);

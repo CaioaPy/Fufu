@@ -12,7 +12,7 @@ function NpcGenerator() {
 
   const fetchCharacter = async () => {
     try {
-      const response = await axios.get('https://localhost:7017/api/Character', {
+      const response = await axios.get('https://fufu-lj60.onrender.com/api/Character', {
         params: { minAge, maxAge, region, gender },
       });
       setCharacter(response.data);
