@@ -1,34 +1,43 @@
 .divNavBar {
-    color: brown;
-    background-color: brown;
+    color: #E86800;
+    background: linear-gradient(360deg, #E86800, #000000);
     padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 7ch;
+    height: 10ch;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
 
-a {
-    color:darkred;
-}
-
-a:hover {
-    color:red;
-}
-
 .buttonEsquerda {
+    padding-top: 5ch;
     color:red;
 }
 
 .buttonMeio {
-    color:blue;
+    color: #E86800;
+    padding-top: 10ch;
 }
 
 .buttonDireita {
-    color:green
+    padding-top: 5ch;
+    color:green;
+}
+
+.logo {
+    width: 450px;
+    height: auto;
+}
+
+.npc, .dice {
+    width: 65ch; 
+    height: auto; 
+}
+
+.npc:hover, .dice:hover, .logo:hover {
+    cursor: pointer;
 }
