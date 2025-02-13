@@ -22,7 +22,7 @@ function NpcGenerator() {
   }
 
   useEffect(() => {
-    fetchCharacter();
+    fetchCharacter;
   }, []);
 
   return (

@@ -18,7 +18,7 @@ function Dice(){
     };
   
     useEffect(() => {
-      fetchResult();
+      fetchResult;
     }, [sides]);
 
     const handleSelectChange = (e) => {
