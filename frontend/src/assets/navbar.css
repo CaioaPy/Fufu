@@ -1,47 +1,72 @@
-.divNavBar {
-    color: #E86800;
-    background: linear-gradient(360deg, #E86800, #000000);
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 12ch;
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #222;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    right: 0;
+    z-index: 1000;
 }
 
-.buttonEsquerda {
-    padding-top: 2ch;
-    color:red;
+/* Navbar container */
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.buttonMeio {
-    color: #E86800;
-    padding-top: 10ch;
+/* Logo */
+.navLogo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff !important;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.buttonDireita {
-    padding-top: 2ch;
-    color:green;
+.navLogo:hover {
+    color: #ffcc00 !important;
 }
 
-.logo {
-    width: 450px;
-    height: auto;
+/* Navigation links */
+.navLink {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ddd !important;
+    text-decoration: none !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
 }
 
-.npc {
-    width: 75ch; 
-    height: auto; 
-}
-.dice {
-    width: 65ch; 
-    height: auto; 
+/* Fix for purple links */
+.navLink:visited {
+    color: #ddd !important;
 }
 
-.npc:hover, .dice:hover, .logo:hover {
-    cursor: pointer;
+/* Hover effect */
+.navLink:hover {
+    background: #ffcc00 !important;
+    color: #222 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

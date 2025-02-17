@@ -1,3 +1,105 @@
-.toppage {
-  margin-top: 25ch;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  overflow: auto; 
+}
+
+.npc-generator {
+  margin-top: 80px; 
+  padding: 20px;
+  background-color: transparent;
+  height: 100%; 
+}
+
+.npc-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.npc-title {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.npc-subtitle {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.npc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.npc-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.npc-input label {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.npc-input input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.npc-input input:focus {
+  outline: none;
+  border-color: #ffcc00;
+}
+
+.npc-button {
+  background-color: #ffcc00;
+  color: #222;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.npc-button:hover {
+  background-color: #ffaa00;
+}
+
+.npc-details {
+  margin-top: 30px;
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.npc-details h2 {
+  font-size: 1.8rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.npc-details p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.npc-details strong {
+  color: #ffcc00;
 }

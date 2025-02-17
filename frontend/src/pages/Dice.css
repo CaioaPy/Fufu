@@ -1,3 +1,73 @@
 .toppage {
-    margin-top: 25ch;
-  }
+  text-align: center;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  padding: 20px;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toppage-window {
+  width: 100%;
+  padding: 30px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.toppage h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.toppage h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.toppage select {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toppage select:hover {
+  background-color: #ffcc00;
+  color: #222;
+}
+
+.toppage button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #ffcc00;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.toppage button:hover {
+  background-color: #ff9900;
+  transform: scale(1.05);
+}
+
+.toppage p {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
