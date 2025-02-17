@@ -1,7 +1,7 @@
 import Navbar from '../assets/navbar';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import './dice.css';
+import './Dice.css';
 
 function Dice() {
     const [sides, setSides] = useState(4);
@@ -39,6 +39,10 @@ function Dice() {
                     <option value="10">D10</option>
                     <option value="12">D12</option>
                     <option value="20">D20</option>
+                    <option value="40">D40</option>
+                    <option value="50">D50</option>
+                    <option value="80">D80</option>
+                    <option value="100">D100</option>
                 </select>
                 <button onClick={fetchResult}>Roll</button>
                 {result && <p>Result: {result}</p>}

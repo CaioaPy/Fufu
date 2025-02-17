@@ -9,7 +9,7 @@ function Home() {
             <div className="main-container">
                 <h1>Welcome to Fufu!</h1>
                 <p className="home-description">
-                    Fufu is the perfect website to enhance your RPG sessions with ease and creativity. Whether you're rolling dice, creating characters, or building entire adventures, Fufu makes it easier than ever to dive into your favorite RPG games!
+                    Fufu is the perfect website to enhance your RPG sessions with ease and creativity. Whether you&apos;re rolling dice, creating characters, or building entire adventures, Fufu makes it easier than ever to dive into your favorite RPG games!
                 </p>
                 <div className="cta">
                     <h2>Start Your Adventure Today!</h2>
