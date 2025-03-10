@@ -1,5 +1,3 @@
-![Logo](./frontend/src/assets/imgs/Logo.png)
-
 Welcome to **Fufu**! Fufu is the perfect website to enhance your RPG sessions with ease and creativity. Whether you're rolling dice, creating characters, or building entire adventures, Fufu makes it easier than ever to dive into your favorite RPG games!
 
 ## Features
